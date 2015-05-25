@@ -37,7 +37,7 @@ Please feel free to use a different markup language if you do not plan to run
 * Features
   
   User login and access control; 
-  Contact group; /n
+  Contact group; 
   Address modification, included remove, add, update; 
   Gmail account contact import; 
 

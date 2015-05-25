@@ -36,10 +36,10 @@ Please feel free to use a different markup language if you do not plan to run
 
 * Features
   
-  User login and access control
-  Contact group
-  Address modification, included remove, add, update
-  Gmail account contact import 
+  User login and access control; 
+  Contact group; /n
+  Address modification, included remove, add, update; 
+  Gmail account contact import; 
 
 * Improvement
   

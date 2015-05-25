@@ -25,4 +25,32 @@ Things you may want to cover:
 
 
 Please feel free to use a different markup language if you do not plan to run
+
+* Over approach
+
+  At the beginning, Admin user login in and create his own contact list which will treat as normal users. Once user's info created, user could use email/phone number to login in this address book to create something for himself. With Createby flag, users could only access their own contact list.
+
+* Platform
+  
+  Mysql, Rails, Mac. They are easy to install and delivery code during development stage. If it is production levle, for this small application, I would chose Thin, Mysql, they reliable and lightweight combo.
+
+* Features
+  
+  User login and access control
+  Contact group
+  Address modification, included remove, add, update
+  Gmail account contact import 
+
+* Improvement
+  
+  Seperate user access control from email/phone
+  Add encryption code with login info
+
+* Add-In
+
+  Use differet Json parser
+  Use API middleware to speed up
+  Use Puma as web server
+  Use more cache 
+
 <tt>rake doc:app</tt>.

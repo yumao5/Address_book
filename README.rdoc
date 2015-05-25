@@ -43,14 +43,10 @@ Please feel free to use a different markup language if you do not plan to run
 
 * Improvement
   
-  Seperate user access control from email/phone
-  Add encryption code with login info
+  Seperate user access control from email/phone;  Add encryption code with login info
 
 * Add-In
 
-  Use differet Json parser
-  Use API middleware to speed up
-  Use Puma as web server
-  Use more cache 
+  Use differet Json parser;  Use API middleware to speed up;  Use Puma as web server;  Use more cache 
 
 <tt>rake doc:app</tt>.

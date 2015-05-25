@@ -97,6 +97,7 @@ class AdminUsersController < ApplicationController
           createby: u.createby
         }
       end
+      self.status = 200
       self.response_body = {Contacts: list}.to_json
     else
       self.status = 400

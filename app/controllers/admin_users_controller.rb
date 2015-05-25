@@ -120,7 +120,7 @@ class AdminUsersController < ApplicationController
     content = JSON.parse(params[:content])
     id = request_param_of_type("id", Fixnum, content)
     raise "id: #{id}" unless AdminUser.exists? id
-    # curl -X GET -d 'content={"id":13, "first_name":"maomoa", "last_name":"namelast", "email":"ljjdd@hotmail.com", "phone":"111111111"}' http://localhost:3000/update_contact
+    # curl -X POST -d 'content={"id":11, "createby":"admin", "first_name":"weo", "last_name":"weo", "email":"ljjdd@hotmail.com", "phone":"111111111"}' http://localhost:3000/update_contact
     if id
       @user = AdminUser.find_by(id: id)
       @user.update_attributes(content)
@@ -132,7 +132,7 @@ class AdminUsersController < ApplicationController
     self.response_body = ' '
     raise 'No "content" sent in the request' unless params[:content]
     content = JSON.parse(params[:content])
-    # curl -X POST -d 'content={"createby":"navybean", "first_name":"maomoa", "last_name":"namelast", "email":"ljjdd@hotmail.com", "phone":"111111111"}' http://localhost:3000/create_contact
+    # curl -X POST -d 'content={"createby":"admin", "first_name":"maomoa", "last_name":"namelast", "email":"ljjdd@hotmail.com", "phone":"111111111"}' http://localhost:3000/create_contact
     if content
       @user = AdminUser.new(content)
       @user.save

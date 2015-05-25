@@ -23,6 +23,10 @@ RSpec.describe AdminUser, type: :model do
       it "Phone check" do
           user.phone == "111111"
       end
+
+      it "User name check" do
+          user.username == ""
+      end
   end
 
 end

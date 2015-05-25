@@ -1,0 +1,11 @@
+<% @page_title = "Admin Menu" %>
+<div class="container">
+<div class="row well"><h4>Logged in as: <%= session[:username] %></h4></div>
+<div class="row">  
+  <ul class="nav nav-tabs">
+	  <li><%= link_to("Manage Contacts", :controller => 'admin_users') %></li>
+	  <li><%= link_to("Logout", :action => 'logout') %></li>
+  </ul>
+</div>
+</div>
+

@@ -1,0 +1,16 @@
+<% @page_title = 'Create User' %>
+
+<div class="well well-sm">
+  <h4><%= link_to("Back", {:action => 'index'}, :class => 'back-link') %>/Create Contact</h4>
+</div>
+
+<div class="user new">
+  <%= form_for(:admin_user, :url => {:action => 'create'}) do |f| %>
+  <%= render(:partial => 'form', :locals => {:f => f} ) %>
+
+	<div class="buttons">
+	  <%= submit_tag('Create New Contact') %>
+	</div>
+
+  <% end %>
+</div>

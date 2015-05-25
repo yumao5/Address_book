@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple <%= " | #{@page_title}" if @page_title %></title>
+    <%= stylesheet_link_tag('application', :media => 'all') %>
+  </head>
+  <body>
+    <div class="container">
+    <div class="row">
+    <div id="header" class="row">
+      <h1>Address Book</h1>
+    </div>
+    <div id="main" class="row">
+      <div id="navigation">
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>

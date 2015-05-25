@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Address Book</title>
+    <%= stylesheet_link_tag('application', :media => 'all') %>
+    <%= javascript_include_tag('public') %>
+  </head>
+  <body>
+    <div class="container">
+    <div class="row">
+      <!-- before yield -->
+        <%= yield %>
+      <!-- after yield -->
+    </div>
+    </div>
+
+  </body>
+</html>

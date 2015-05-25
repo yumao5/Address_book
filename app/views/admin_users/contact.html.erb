@@ -1,0 +1,22 @@
+<div class="row">
+
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Actions</th>
+  </tr>
+  <% unless @contacts.nil?%>
+    <% @contacts.each do |c|%>
+    <tr class="<%= cycle('info', '') %>">
+      <td><%= c[:name]%></td>
+      <td><%= c[:email]%></td>
+      <td class="actions">
+        <%= link_to('Add', {:action => 'creategoo', :username => c[:name], :email => c[:email]}) %>
+      </td>
+    </tr>
+    <% end %>
+  <% end %>
+</table>
+
+<div class="row">

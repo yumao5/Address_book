@@ -6,8 +6,6 @@
 
 * How to run the test suite : Run with Rspec
 
-Please feel free to use a different markup language if you do not plan to run
-
 * Over approach
 
   At the beginning, Admin user login in and create his own contact list which will treat as normal users. Once user's info created, user could use email/phone number to login in this address book to create something for himself. With Createby flag, users could only access their own contact list.

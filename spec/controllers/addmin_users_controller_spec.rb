@@ -11,14 +11,14 @@ RSpec.describe  AdminUsersController, type: :controller do
 
    describe "#Admin user controller check" do
 
-      it 'index method check' do
+      it '#Try index action without login' do
         get :index
-        expect(response.status).to eq 302
+        expect(subject).to redirect_to("/access/login")
       end
 
-      it 'new method check' do
+      it '#Try edit action without login' do
         get :new
-        expect(response.status).to eq 302
+        expect(subject).to redirect_to("/access/login")
       end
     end
 

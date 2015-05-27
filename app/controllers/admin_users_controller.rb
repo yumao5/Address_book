@@ -112,6 +112,7 @@ class AdminUsersController < ApplicationController
       # curl -X GET -d 'content={"id":13}' http://localhost:3000/del_contact
       raise "id: #{id}" unless AdminUser.exists? id
       AdminUser.find(id).destroy
+      self.status = 200
   end
 
   def api_update_contact

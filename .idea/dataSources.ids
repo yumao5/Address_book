@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - simple_cms_development@localhost" uuid="04e32b45-81b9-4765-8f02-acd6d343c1b3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails simple_cms: development" uuid="e5e372ed-b3ac-40e7-b695-fad8fefe9df8">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails simple_cms: test" uuid="0fb68b0d-98e3-48fd-82a7-3b5052585485">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails simple_cms: production" uuid="41181bf0-de71-4e1d-92d8-0a16e37b6d22">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
